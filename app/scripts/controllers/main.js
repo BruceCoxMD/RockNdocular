@@ -24,20 +24,20 @@ angular.module('rockNdocularApp')
             var controller = this;
             controller.state = null;
             controller.API = null;
-            controller.currentVideo = 0;
+            controller.currentAudio = 0;
 
             controller.onPlayerReady = function(API) {
                 controller.API = API;
             };
 
-            controller.onCompleteVideo = function() {
+            controller.onCompleteAudio = function() {
                 controller.isCompleted = true;
-                controller.currentVideo++;
-                if (controller.currentVideo >= controller.videos.length) controller.currentVideo = 0;
-                controller.setVideo(controller.currentVideo);
+                controller.currentAudio++;
+                if (controller.currentAudio >= controller.audios.length) controller.currentAudio = 0;
+                controller.setAudio(controller.currentAudio);
             };
 
-            controller.videos = [
+            controller.audios = [
             {
                 sources: [
                     {src: $sce.trustAsResourceUrl("/audio/RockinDoc-1-24-95.mp3"), type: "audio/mp3"}
@@ -60,7 +60,7 @@ angular.module('rockNdocularApp')
                 autoHide: false,
                 autoHideTime: 3000,
                 autoPlay: false,
-                sources: controller.videos[0].sources,
+                sources: controller.audios[0].sources,
                 theme: {
                     url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
                 },
@@ -69,10 +69,10 @@ angular.module('rockNdocularApp')
                 }
             };
 
-            controller.setVideo = function(index) {
+            controller.setAudio = function(index) {
                 controller.API.stop();
-                controller.currentVideo = index;
-                controller.config.sources = controller.videos[index].sources;
+                controller.currentAudio = index;
+                controller.config.sources = controller.audios[index].sources;
                 $timeout(controller.API.play.bind(controller.API), 100);
             };
         }]
