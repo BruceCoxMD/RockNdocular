@@ -23,24 +23,24 @@ angular.module('rockNdocularApp')
     controller.onCompleteAudio = function() {
         controller.isCompleted = true;
         controller.currentAudio++;
-        if (controller.currentAudio >= controller.audios.length) controller.currentAudio = 0;
+        if (controller.currentAudio >= controller.audios.length) { controller.currentAudio = 0; }
         controller.setAudio(controller.currentAudio);
     };
 
     controller.audios = [
     {
         sources: [
-            {src: $sce.trustAsResourceUrl("/audio/RockinDoc-1-24-95.mp3"), type: "audio/mpeg"}
+            {src: $sce.trustAsResourceUrl("./audio/RockinDoc-1-24-95.mp3"), type: "audio/mpeg"}
         ]
     },
     {
         sources: [
-            {src: $sce.trustAsResourceUrl("/audio/RockinDoc-1-31-95.mp3"), type: "audio/mpeg"}
+            {src: $sce.trustAsResourceUrl("./audio/RockinDoc-1-31-95.mp3"), type: "audio/mpeg"}
         ]
     },
     {
         sources: [
-            {src: $sce.trustAsResourceUrl("/audio/RockinDoc-2-21-95.mp3"), type: "audio/mpeg"}
+            {src: $sce.trustAsResourceUrl("./audio/RockinDoc-2-21-95.mp3"), type: "audio/mpeg"}
         ]
     }
     ];
@@ -55,7 +55,7 @@ angular.module('rockNdocularApp')
             url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
         },
         plugins: {
-            poster: "/images/rockndoc.png"
+            poster: "./images/rockndoc.png"
         }
     };
 
