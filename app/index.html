@@ -51,7 +51,13 @@
       <div ng-app="rockNdocularApp">
         <div ng-controller="MainCtrl as controller">
 
-
+          <div class="playlist">
+            <ul>
+              <li><a ng-click="controller.setAudio(0)">RockinDoc-1-24-95</a></li>
+              <li><a ng-click="controller.setAudio(1)">RockinDoc-1-31-95</a></li>
+              <li><a ng-click="controller.setAudio(2)">RockinDoc-2-21-95</a></li>
+            </ul>
+          </div>
           <div class="videogular-container">
             <videogular vg-player-ready="controller.onPlayerReady($API)" vg-complete="controller.onCompleteAudio()" vg-theme="controller.config.theme.url">
                 <vg-media vg-src="controller.config.sources" vg-type="audio"
@@ -77,15 +83,6 @@
                 <vg-poster vg-url='controller.config.plugins.poster'></vg-poster>
             </videogular>
           </div>
-          <div class="playlist">
-            <ul>
-              <li><a ng-click="controller.setAudio(0)">RockinDoc-1-24-95</a></li>
-              <li><a ng-click="controller.setAudio(1)">RockinDoc-1-31-95</a></li>
-              <li><a ng-click="controller.setAudio(2)">RockinDoc-2-21-95</a></li>
-            </ul>
-          </div>
-
-
 
         </div>
       </div>
