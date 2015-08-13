@@ -55,7 +55,7 @@ angular.module('rockNdocularApp')
             url: "http://www.videogular.com/styles/themes/default/latest/videogular.css"
         },
         plugins: {
-            poster: "http://www.videogular.com/assets/images/videogular.png"
+            poster: "/images/rockndoc.png"
         }
     };
 
