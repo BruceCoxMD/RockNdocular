@@ -30,17 +30,17 @@ angular.module('rockNdocularApp')
     controller.audios = [
     {
         sources: [
-            {src: $sce.trustAsResourceUrl("/audio/RockinDoc-1-24-95.mp3"), type: "audio/mp3"}
+            {src: $sce.trustAsResourceUrl("/audio/RockinDoc-1-24-95.mp3"), type: "audio/mpeg"}
         ]
     },
     {
         sources: [
-            {src: $sce.trustAsResourceUrl("/audio/RockinDoc-1-31-95.mp3"), type: "audio/mp3"}
+            {src: $sce.trustAsResourceUrl("/audio/RockinDoc-1-31-95.mp3"), type: "audio/mpeg"}
         ]
     },
     {
         sources: [
-            {src: $sce.trustAsResourceUrl("/audio/RockinDoc-2-21-95.mp3"), type: "audio/mp3"}
+            {src: $sce.trustAsResourceUrl("/audio/RockinDoc-2-21-95.mp3"), type: "audio/mpeg"}
         ]
     }
     ];
