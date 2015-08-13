@@ -5,14 +5,40 @@ $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/boots
 
 .browsehappy {
   margin: 0.2em 0;
-  color: green;
+  color: red;
   background-color: black;
   padding: 0.2em 0;
 }
 
+.navbar-default {
+  color: red;
+  background-color: black;
+  border: 1px solid #010101;
+}
+
+a {
+  color: red;
+  background-color: black;
+}
+
+a:hover {
+  color: red;
+  background-color: black;
+}
+
+a:visited {
+  color: red;
+  background-color: black;
+}
+
+a:active {
+  color: red;
+  background-color: black;
+}
+
 body {
   padding: 0;
-  color: green;
+  color: red;
   background-color: black;
 }
 
@@ -26,7 +52,7 @@ body {
 
 /* Custom page header */
 .header {
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #010101;
   margin-bottom: 10px;
 
   /* Make the masthead heading the same height as the navigation */
@@ -42,7 +68,7 @@ body {
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid #010101;
 }
 
 .container-narrow > hr {
@@ -52,7 +78,7 @@ body {
 /* Main marketing message and sign up button */
 .jumbotron {
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+  border-bottom: 1px solid #010101;
 
   .btn {
     font-size: 21px;
@@ -93,7 +119,7 @@ body {
 }
 
 .playlist {
-  color: green;
+  color: red;
   background-color: black;
 }
 
